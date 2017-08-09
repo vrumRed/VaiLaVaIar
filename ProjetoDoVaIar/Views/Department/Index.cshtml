@@ -1,0 +1,22 @@
+﻿@model IEnumerable<ProjetoDoVaIar.Models.Department>
+
+<a asp-controller="Department" asp-action="Create">Cadastrar Novo Departamento</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Cidade</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var department in Model)
+        {
+            <tr>
+                <td>@department.Nome</td>
+                <td>@department.Cidade</td>
+            </tr>
+        }
+    </tbody>
+
+</table>

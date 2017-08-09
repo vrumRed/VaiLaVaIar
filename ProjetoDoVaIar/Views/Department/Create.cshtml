@@ -1,0 +1,35 @@
+﻿@model ProjetoDoVaIar.Models.DepartmentViewModels.CreateViewModel
+
+<h2 class="page-header">Cadastro de Departamentos</h2>
+
+<form asp-controller="Department" asp-action="Create">
+    <label asp-for="CEP"></label>
+    <input asp-for="CEP"  class="form-control"/>
+    <span asp-validation-for="CEP" style="color:red"></span><br />
+
+    <label asp-for="Nome"></label>
+    <input asp-for="Nome"  class="form-control"/>
+    <span asp-validation-for="Nome" style="color:red"></span><br />
+
+    <label asp-for="Pais"></label>
+    <input asp-for="Pais"  class="form-control"/>
+    <span asp-validation-for="Pais" style="color:red"></span><br />
+
+    <label asp-for="Estado"></label>
+    <input asp-for="Estado"  class="form-control"/>
+    <span asp-validation-for="Estado" style="color:red"></span><br />
+
+    <label asp-for="Cidade"></label>
+    <input asp-for="Cidade"  class="form-control"/>
+    <span asp-validation-for="Cidade" style="color:red"></span><br />
+
+    <label asp-for="Rua"></label>
+    <input asp-for="Rua"  class="form-control"/>
+    <span asp-validation-for="Rua" style="color:red"></span><br />
+
+    <label asp-for="Numero"></label>
+    <input asp-for="Numero"  class="form-control"/>
+    <span asp-validation-for="Numero" style="color:red"></span><br />
+
+    <button type="submit" class="btn btn-primary">Submete Ai!</button>
+</form>
